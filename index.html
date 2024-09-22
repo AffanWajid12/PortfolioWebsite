@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cb45c46ff2.js" crossorigin="anonymous"></script>
+
+    <style>
+        *{
+            font-family: 'Otterco', sans-serif;
+        }
+    </style>
+</head>
+<body class ="bg-black">
+    <header class=" w-full p-8 flex justify-between">
+        <ul class="flex text-[3px] font-medium gap-7 text-neutral-500 sm:text-[13px] md:text-[14px]">
+            <li class="hover:text-white duration-300 hidden md:block"><a href="https://www.linkedin.com/in/maffanwajid/">LinkedIn</a></li>
+            
+        </ul>
+
+        <ul class="flex text-[10px] font-medium gap-7 text-neutral-500 sm:text-[13px] md:text-[14px]">
+            <li class="hover:text-white duration-300"><a href="#profile">Personal Profile</a></li>
+            <li class="hover:text-white duration-300"><a href="#gallery">Gallery Page</a></li>
+            <li class="hover:text-white duration-300"><a href="#career-goals">Career Goals</a></li>
+            <li class="hover:text-white duration-300"><a href="#projects">Projects</a></li>
+            <li class="hover:text-white duration-300"><a href="#skills-interests">Skills and Interests</a></li>
+            <li class="hover:text-white duration-300"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </header>
+
+    <main>
+         <!-- This is the home section-->
+        <div id="home" class="flex flex-col items-center justify-center gap-2 align-middle bg-black h-36 min-h-[89vh]">
+            <p class="text-white block text-sm sm:text-sm md:text-xl">I'm Muhammad Affan Wajid</p>
+            <p class="text-white block  font-medium sm:text-base md:text-3xl text-center">Building innovative software solutions and full-stack applications.</p>
+            <p class="bg-white text-sm mt-3 w-44 h-14 rounded-3xl hover:underline hover:underline-offset-4 duration-200 px-12 py-4"><a href="#contact">Get In touch</a></p>
+        </div>
+        
+        <!-- This is the profile section-->
+        <div id="profile" class="flex flex-col items-center justify-center min-h-screen bg-zinc-900 ">
+            <div class="flex items-center justify-center">
+                <h2 class=" text-black text-xl font-bold mb-20 bg-white inline-block mx-auto rounded-3xl p-3 px-11">Personal Profile</h2>
+             </div>
+            <img src="profile-pic.png" class=" w-52 rounded-[200px] border-1 object-center border-gray-500 bg-slate-600 mb-11" alt="profile-pic">
+            <p class="text-white block text-sm md:text-xl font-light text-balance tracking-wider w-[70%] text-center md:w-[40%]">"Web Developer, Student at Fast University Islamabad. I have done several projects during my semesters which made me gain experience in making websites and also making full stack web-applications using various technologies."</p>
+            <div class="flex mt-10 items-center "  id="socials">
+                <p class="inline text-white text-xl font-medium">Socials </p>
+                <a href="https://www.linkedin.com/in/maffanwajid/"><i class="fa-brands fa-linkedin-in bg-white p-3 rounded-full inline ml-3 hover:bg-blue-500 hover:text-white duration-300"></i></a>
+                <a href="https://github.com/AffanWajid12"><i class="fa-brands fa-github  bg-white p-3 rounded-full inline ml-3 hover:text-white hover:bg-violet-700 duration-300"></i></a>
+            </div>
+        </div>
+        <!-- This is the gallery section-->
+        <div id="gallery" class="min-h-screen p-20">
+            <div class="flex items-center justify-center">
+                <h2 class=" text-black text-xl font-bold mb-11 bg-white inline-block mx-auto rounded-3xl p-3 px-11">Photo Gallery</h2>
+             </div>
+            <div id="gallery-collection" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-7 text-center">
+
+                <div class="items-center flex flex-col gap-2 bg-white rounded-b-xl">
+                    <img src="leetcode.jpeg" class="w-full h-64 object-cover" alt="leetcode">
+                    <p class="p-1 text-base font-medium mt-auto mb-3"> Done LeetCode Consistently</p>
+                </div>
+                <div class="items-center flex flex-col gap-2 bg-white rounded-b-xl">
+                    <img src="speedcoding.jpeg" class="w-full h-64 object-cover" alt="speedprogramming">
+                    <p class="p-1 text-base font-medium mt-auto mb-3">Participated in a Speed-programming competition</p>
+                </div>
+                <div class="items-center flex flex-col gap-2 bg-white rounded-b-xl">
+                    <img src="emumba.jpeg" class="w-full h-64 object-cover" alt="emumba">
+                    <p class="p-1 text-base font-medium mt-auto mb-3">Collaborated with Emumba on a University Project</p>
+                </div>
+                <div class="items-center flex flex-col gap-2 bg-white rounded-b-xl">
+                    <img src="aimlab.jpeg" class="w-full h-64 object-cover" alt="aimlab">
+                    <p class="p-1 text-base font-medium mt-auto mb-3">Internship at AimLab</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- This is the career goals section-->
+        <div id="career-goals" class="min-h-screen bg-zinc-900 ">
+            <div class="flex items-center justify-center">
+                <h2 class=" text-black text-xl font-bold mb-11 bg-white inline-block mx-auto rounded-3xl p-3 px-11 mt-3">Career Goals</h2>
+             </div>
+            <div class="flex flex-col gap-8 justify-center w-full ">
+             <div class="flex-row gap-20 justify-center mt-9 sm:flex mb:flex">
+                <div class="flex flex-col items-center gap-20 mt-12" id="short-term-goals">
+                    <h1 class="text-white font-bold">Short Term Goals</h1>
+                    <ul class="text-white text-center">
+                        <li class="mb-4">Getting Good at LeetCode</li>
+                        <li class="mb-4">Improving my Web Development Skills</li>
+                        <li class="mb-4">Learn about AI and Machine Learning and apply it in a project</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col items-center gap-20 mt-12 text-center" id="long-term-goals">
+                    <h1 class="text-white font-bold">Long Term Goals</h1>
+                    <ul class="text-white">
+                        <li class="mb-4">Get in one of the top Pakistani Tech Companies</li>
+                        <li class="mb-4">Win International Hackathons</li>
+                        <li class="mb-4">Become a Senior Software Engineer</li>
+                    </ul>
+                </div>
+
+                
+            </div>
+            <div class="flex flex-col items-center gap-11 mt-12 text-center bg-zinc-900 p-10 mb-24" id="motivational">
+                <h1 class="text-white font-bold">Motivational Quote</h1>
+                <p class="text-white">"Success is not final, failure is not fatal: It is the courage to continue that counts."</p>
+            </div>
+            </div>
+        </div>
+        
+
+
+
+        <!-- This is the projects section-->
+        <div id="projects" class="min-h-screen p-20 bg-black">
+            <div class="flex items-center justify-center">
+                <h2 class=" text-black text-xl font-bold mb-11 bg-white inline-block mx-auto rounded-3xl p-3 px-11">Projects</h2>
+             </div>
+            <div id="projects-collection" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-7 text-center">
+
+                <div class="items-center flex flex-col gap-2 bg-white rounded-md">
+                    <h1 class="p-1 text-xl font-medium mt-auto mb-3">Visium</h1>
+                    <img src="visium.PNG" class="w-full h-64 object-cover" alt="leetcode">
+                    <p class="p-1 text-base font-light mt-auto mb-3">Developed Visum, an AI-based web application that generates summaries of YouTube videos in text, images, and summary video formats, enhancing user experience through intuitive interfaces and reliable outputs.</p>
+                    <p class="p-1 font-medium text-sm mb-3">Technologies Used: Python,Flask,Gemini, HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="items-center flex flex-col gap-2 bg-white rounded-md">
+                    <h1 class="p-1 text-xl font-medium mt-auto mb-3">LMS</h1>
+                    <img src="lms.PNG" class="w-full h-64 object-cover" alt="leetcode">
+                    <p class="p-1 text-base font-light mt-auto mb-3">After completing a Software Design and Architecture course, my team and I developed a Learning Management System using full-stack technologies. The project allowed us to apply the skills we learned in the course, creating a functional and interactive platform.</p>
+                    <p class="p-1 font-medium text-sm mb-3">Technologies Used: HTML, CSS, JavaScript, React, Java(Spring Boot)</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- This is the Skills and Intrests section-->
+        <div id="skills-interests" class="min-h-screen p-11 bg-zinc-900 ">
+            <div class="flex items-center justify-center">
+                <h2 class=" text-black text-xl font-bold mb-11 bg-white inline-block mx-auto rounded-3xl p-3 px-11 mt-3">Skills and Interests</h2>
+             </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-7 text-center">
+                <div id="#skills" class="bg-black h-[75vh] rounded-md">
+                    <h1 class="p-9 text-3xl font-medium mt-auto mb-3 text-white">Skills</h1>
+
+
+                    <div class="grid grid-cols-[50%,50%]  gap-2 gap-y-12">
+                        <div class="flex items-center ml-12">
+                            <i class="fa-brands fa-python hover:text-sky-600 bg-white p-3 rounded-full w-11 inline duration-300"></i>
+                            <p class="text-white inline ml-2 mr-auto">Python</p>
+                        </div>
+                        <div class=" bg-green-500 h-[20%] w-[30%] mr-auto my-auto rounded-full"></div>
+
+                        <div class="flex items-center ml-12">
+                            <i class="fa-brands fa-java hover:text-orange-400 bg-white p-3 rounded-full w-11 inline duration-300"></i>
+                            <p class="text-white inline ml-2 mr-auto">Java</p>
+                        </div>
+                        <div class=" bg-green-500 h-[20%] w-[70%] mr-auto my-auto rounded-full"></div>
+
+                        <div class="flex items-center ml-12">
+                            <i class="fa-brands fa-js hover:text-yellow-500 bg-white p-3 rounded-full w-11 inline duration-300"></i>
+                            <p class="text-white inline ml-2 mr-auto">JavaScript</p>
+                        </div>
+                        <div class=" bg-green-500 h-[20%] w-[50%] mr-auto my-auto rounded-full"></div>
+
+                        <div class="flex items-center ml-12">
+                            <i class="fa-brands fa-html5 hover:text-orange-700 bg-white p-3 rounded-full w-11 inline duration-300"></i>
+                            <p class="text-white inline ml-2 mr-auto">HTML</p>
+                        </div>
+                        <div class=" bg-green-500 h-[20%] w-[75%] mr-auto my-auto rounded-full"></div>
+
+                        <div class="flex items-center ml-12">
+                            <i class="fa-brands fa-css3-alt hover:text-blue-500 bg-white p-3 rounded-full w-11 inline duration-300"></i>
+                            <p class="text-white inline ml-2 mr-auto">CSS</p>
+                        </div>
+                        <div class=" bg-green-500 h-[20%] w-[60%] mr-auto my-auto rounded-full"></div>
+                    </div>
+
+
+                </div>
+                <div id="#interests" class="bg-black h-[75vh] rounded-md">
+                    <h1 class="p-9 text-3xl font-medium mt-auto mb-3 text-white">Interests/Hobbies</h1>
+                    <ul class="text-white p-20 text-xl">
+                        <li class="mb-4">Watching Anime</li>
+                        <li class="mb-4">Going to the Gym</li>
+                        <li class="mb-4">Reading Novels</li>
+                        <li class="mb-4">Watching Tech Related News</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- This is the Contact me section-->
+        <div id="contact" class="min-h-screen p-1 bg-black sm:p-1 md:p-20">
+            <div class="flex items-center justify-center">
+                <h2 class=" text-black text-xl font-bold mb-11 bg-white inline-block mx-auto rounded-3xl p-3 px-11 mt-3">Contact Me</h2>
+             </div>
+             <div class="w-[90vw] mx-auto lg:w-[50vw]">
+                <form class="flex flex-col justify-center ">
+                    <div class="grid grid-cols-[25%,75%] p-1 gap-y-4 md:p-20">
+                        <div class="h-10">
+                            <p class ="text-white text-xl inline">Name</p>
+                            </div>
+                            <div class="h-10">
+                            <input class="w-[100%] md:w-[75%] rounded-sm" required type="text">
+                        </div>
+
+
+                        <div class="h-10">
+                            <p class ="text-white text-xl inline">Email</p>
+                            </div>
+                            <div class="h-10">
+                            <input class="w-[100%] md:w-[75%] rounded-sm" required type="email">
+                        </div>
+
+                        <div class="h-10">
+                            <p class ="text-white text-xl inline">Subject</p>
+                            </div>
+                            <div class="h-10">
+                            <input class="w-[100%] md:w-[75%] rounded-sm" required type="text">
+                        </div>
+
+                        <div class="h-10">
+                            <p class ="text-white text-xl inline">Message</p>
+                            </div>
+                            <div class="h-20">
+                            <textarea class="w-[100%] lg:w-[75%] rounded-sm text-[12px] h-full resize-none" required></textarea>
+                        </div>
+                    </div>
+
+                    <button class="bg-white py-2 mx-auto rounded-md w-24 font-bold mt-5 mb-10" type="Submit">Submit</button>
+                </form>
+                <div class="flex justify-between">
+                    <p class="text-white text-xs lg:text-lg inline">Email: affanwajidalii@gmail.com</p>
+                    <p class="text-white text-xs lg:text-lg inline">Phone Number: 03167158461</p>
+                </div>
+             </div>
+        </div>
+    </main>
+</body>
+</html>
